@@ -1,3 +1,5 @@
+'use strict';
+
 const Categories = require('../categories/categories.js');
 
 describe('Categories Model', () => {
@@ -45,11 +47,31 @@ describe('Categories Model', () => {
   });
 
   it('can update() a category', () => {
-    
+    let obj = { name: 'Test Category', zoo: true };
+    categories.create(obj)
+      .then(record => {
+        categories.update(record.id, { name: 'New Test Category', id: 55 })
+          .then(category => {
+            categories.get(55)
+              .then(zz => {
+                expect(zz.name).toEqual('New Test Category');
+              })
+              .catch(err => console.error);
+          });
+      })
+      .catch(err => console.error);
   });
 
   it('can delete() a category', () => {
-
+    let obj = { name: 'Test Category' };
+    categories.create(obj)
+      .then(record => {
+        return categories.delete(record._id)
+          .then(category => {
+            expect(categories.get(record._id).name).toBeFalsy();
+          });
+      })
+      .catch(err => console.error);
   });
 
 });
