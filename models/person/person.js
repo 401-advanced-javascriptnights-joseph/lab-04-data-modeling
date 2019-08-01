@@ -6,9 +6,10 @@ class Person extends DataModel {
   constructor() {
     super();
     this.schema = {
+      id: { required: true },
       name: { required: true },
       age: { type: 'number' },
-      sex: { required: true },
+      sex: { type: String },
     };
   }
 }

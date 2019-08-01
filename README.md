@@ -15,6 +15,8 @@
 #### `categories.test.js` test for `categories.js`
 #### `products.js`class products with CRUD
 #### `products.test.js` test for `products.js`
+#### `person.js`class person with CRUD
+#### `person.test.js`test for `person.test.js`
 
 ##### Exported Values and Methods
 `get()` get something from the database if it exists

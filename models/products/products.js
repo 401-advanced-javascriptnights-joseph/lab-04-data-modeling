@@ -6,10 +6,12 @@ class Products extends DataModel {
   constructor() {
     super();
     this.schema = {
-      category_id: { required: true },
-      price: { required: true },
-      weight: { required: true },
-      quantity_in_stock: { required: true },
+      id: { required: true },
+      name: {require: true},
+      category_id: { type: Number },
+      price: { type: Number },
+      weight: { type: Number },
+      quantity_in_stock: { type: true },
     };
   }
 }
