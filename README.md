@@ -5,7 +5,7 @@
 ### Author: Joseph Hangarter
 
 ### Links and Resources
-* [submission PR](https://github.com/401-advanced-javascriptnights-joseph/lab-04-data-modeling/pull/2)
+* [submission PR](https://github.com/401-advanced-javascriptnights-joseph/lab-04-data-modeling/pull/6)
 * [travis]([![Build Status](https://travis-ci.com/401-advanced-javascriptnights-joseph/lab-04-data-modeling.svg?branch=master)](https://travis-ci.com/401-advanced-javascriptnights-joseph/lab-04-data-modeling))
 
 ### Modules
